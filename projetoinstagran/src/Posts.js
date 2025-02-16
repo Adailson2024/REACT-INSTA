@@ -69,6 +69,7 @@ export default function Posts(){
                     curtir(index);
                   }}
                   name={post.curtiu ? "heart" : "heart-outline"}
+                  style={{ color: post.curtiu ? "red" : "black" }} 
                   class="icone-coracao"></ion-icon>
                   <ion-icon name="chatbubble-outline"></ion-icon>
                   <ion-icon name="paper-plane-outline"></ion-icon>
