@@ -1,16 +1,28 @@
-import Store from "./Store"
 
 export default function Stories(){
-  
-    return(
-        <>
-        <div className="stories">
-        <Store/>
+  const perfil=[
+    {usuario:"9gag", foto:"assets/9gag.svg"},
+    {usuario:"meowed", foto:"assets/meowed.svg"},
+    {usuario:"barked", foto:"assets/barked.svg"},
+    {usuario:"nathanwpylestrangeplanet", foto:"assets/nathanwpylestrangeplanet.svg"},
+    {usuario:"wawawicomics", foto:"assets/wawawicomics.svg"},
+    {usuario:"respondeai", foto:"assets/respondeai.svg" },
+    {usuario:"filomoderna", foto:"assets/filomoderna.svg"},
+    {usuario:"memeriagourmet", foto:"assets/memeriagourmet.svg"}  
+    ];
 
-          <div className="setinha">
-            <ion-icon name="chevron-forward-circle"></ion-icon>
+
+return(
+    <>{perfil.map((perfil)=> (
+        <div className="story">
+          <div className="imagem">
+            <img src={perfil.foto} alt={perfil.usuario}/>
           </div>
-        </div>
-        </>
-    );
+          <div className="usuario">
+            {perfil.usuario}
+          </div>
+          </div>
+        ))};
+    </>
+)
 }

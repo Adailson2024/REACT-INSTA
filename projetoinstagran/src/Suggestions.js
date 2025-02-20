@@ -23,7 +23,7 @@ export default function Suggestions(){
             </div>
 
             <div className="seguir">Seguir</div>
-          </div>))};
+          </div>))}
           </>
 
         </div>

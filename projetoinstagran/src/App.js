@@ -1,8 +1,8 @@
 import NavBar from "./NavBar";
 import Stories from "./Stories";
 import Posts from "./Posts";
-import Sidebar from "./Sidebar";
-
+import Suggestions from "./Suggestions";
+import User from "./User";
 
 export default function App() {
     return (
@@ -10,10 +10,29 @@ export default function App() {
             <NavBar/>
     <div className="corpo">
       <div className="esquerda">
-       <Stories/>
+      <div className="stories">
+      <Stories/>
+
+          <div className="setinha">
+            <ion-icon name="chevron-forward-circle"></ion-icon>
+          </div>
+        </div>
+       
        <Posts/>
       </div>
-    <Sidebar/>
+      <div className="sidebar">
+        <User/>
+        <Suggestions/>
+
+        <div className="links">
+          Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes •
+          Hashtags • Idioma
+        </div>
+
+        <div className="copyright">
+          © 2021 INSTAGRAM DO FACEBOOK
+        </div>
+      </div>
       
     </div>
         </>
