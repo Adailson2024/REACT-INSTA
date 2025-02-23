@@ -10,15 +10,8 @@ export default function App() {
             <NavBar/>
     <div className="corpo">
       <div className="esquerda">
-      <div className="stories">
       <Stories/>
-
-          <div className="setinha">
-            <ion-icon name="chevron-forward-circle"></ion-icon>
-          </div>
-        </div>
-       
-       <Posts/>
+      <Posts/>
       </div>
       <div className="sidebar">
         <User/>
